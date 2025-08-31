@@ -1,6 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Yarndings+20&display=swap');
-@import "tailwindcss";
-
-@theme {
-  --font-yardings: "Figtree", system-ui;
-}
