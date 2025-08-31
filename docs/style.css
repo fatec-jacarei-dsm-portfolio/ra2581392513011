@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero {
+    flex: 1;
+}
+
+.main {
+    flex:1;
+}
