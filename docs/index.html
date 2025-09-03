@@ -1,35 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Facchi | Desenvolvedor Fullstack</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tutu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <section id="projects">
-        <div class="projects-wrapper">
-            <article class="project-card">
-                <div class="project-card-content">
-                    <div class="project-card-image-wrapper">
-                        <img class="project-card-image" src="">
-                    </div>
-                    <div class="project-card-title-wrapper">
-                        <h3 class="project-card-title"></h3>
-                    </div>
-                    <div class="project-card-description-wrapper">
-                        <p class="project-card-description"></p>
-                    </div>
-                    <div class="project-card-buttons-wrapper">
-                        <button class="project-card-button">Acessar</button>
-                        <button class="project-card-button">GitHub</button>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-</body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">Arthur<span>.dev</span></h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <canvas id="particles"></canvas>
+    <div class="overlay"></div>
+    <div class="container hero-content fade-in">
+      <h2>👋 Olá, eu sou <span>Arthur Facchi</span></h2>
+      <h1>Transformo ideias em <br><span>soluções digitais</span></h1>
+      <p>
+        Desenvolvedor Fullstack apaixonado por criar aplicações modernas, escaláveis e com design de impacto.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn main-btn">Explorar Projetos</a>
+        <a href="#contact" class="btn">Fale Comigo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJETOS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title slide-up">Projetos em Destaque</h2>
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <div class="project-card slide-up">
+          <div class="card-img">
+            <img src="mockup1.jpg" alt="Projeto Catálogo de Lugares">
+            <div class="card-overlay">
+              <h3>Catálogo de Lugares</h3>
+              <p>Exploração e recomendações de lugares com filtros e sugestões inteligentes.</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+            <div class="buttons">
+              <a href="#" class="btn main-btn">Ver Demo</a>
+              <a href="#" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card slide-up">
+          <div class="card-img">
+            <img src="mockup2.jpg" alt="Dashboard Financeiro">
+            <div class="card-overlay">
+              <h3>Dashboard Financeiro</h3>
+              <p>Controle financeiro com gráficos dinâmicos e autenticação segura.</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="tags"><span>Vue.js</span><span>Express</span><span>MongoDB</span></div>
+            <div class="buttons">
+              <a href="#" class="btn main-btn">Ver Demo</a>
+              <a href="#" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project-card slide-up">
+          <div class="card-img">
+            <img src="mockup3.jpg" alt="Chat em Tempo Real">
+            <div class="card-overlay">
+              <h3>Chat em Tempo Real</h3>
+              <p>Mensagens instantâneas com WebSockets, responsivo e rápido.</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="tags"><span>Next.js</span><span>WebSocket</span><span>Tailwind</span></div>
+            <div class="buttons">
+              <a href="#" class="btn main-btn">Ver Demo</a>
+              <a href="#" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contact">
+    <div class="container fade-in">
+      <h2 class="section-title">Pronto para transformar sua ideia em código?</h2>
+      <p>Entre em contato e vamos criar algo incrível juntos. 🚀</p>
+      <div class="contact-links">
+        <a href="mailto:arthur@email.com" class="btn main-btn">📧 Enviar Email</a>
+        <a href="https://github.com/seuusuario" target="_blank">💻 GitHub</a>
+        <a href="https://linkedin.com/in/seuusuario" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Arthur Facchi — Construído com React, Node.js e ☕</p>
+  </footer>
+
+  <div id="tutu">
+
+  </div>
+  <script src="particulas.js"></script>
+</body>
 </html>

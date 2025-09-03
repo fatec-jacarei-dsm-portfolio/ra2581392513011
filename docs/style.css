@@ -1,5 +1,68 @@
-body, html {
-    margin: 0;
-    box-sizing: border-box;
-    height: 100vh;
+/* ===== Base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Inter", sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; }
+h1, h2, h3 { font-family: "Space Grotesk", sans-serif; }
+a { text-decoration: none; color: inherit; transition: all 0.3s; }
+
+/* ===== Navbar ===== */
+.navbar { position: fixed; top: 0; width: 100%; background: rgba(13,17,23,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #1f2937; z-index: 1000; }
+.nav-content { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+.logo { font-size: 1.4rem; color: #3b82f6; font-weight: 700; }
+.logo span { color: #60a5fa; }
+.nav-links { list-style: none; display: flex; gap: 2rem; }
+.nav-links a:hover { color: #60a5fa; }
+
+/* ===== Hero ===== */
+.hero { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; text-align: center; padding: 0 1rem; overflow: hidden; }
+#particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,17,23,0.8), rgba(17,24,39,0.9)); }
+.hero-content { position: relative; z-index: 1; max-width: 800px; }
+.hero h1 { font-size: 3rem; margin: 1rem 0; }
+.hero h1 span { color: #3b82f6; }
+.hero h2 span { color: #60a5fa; }
+.hero p { color: #d1d5db; margin: 1rem 0 2rem; }
+
+/* ===== Botões ===== */
+.btn { display: inline-block; padding: 0.8rem 1.6rem; border-radius: 8px; border: 1px solid #3b82f6; font-weight: 600; margin: 0.5rem; transition: all 0.3s ease; }
+.btn:hover { transform: translateY(-2px) scale(1.05); background: #1e3a8a; color: #fff; }
+.main-btn { background: #3b82f6; color: #fff; border: none; }
+.main-btn:hover { background: #2563eb; }
+
+/* ===== Seções ===== */
+.section-title { font-size: 2rem; text-align: center; margin-bottom: 3rem; color: #3b82f6; }
+
+/* ===== Projetos ===== */
+.projects { padding: 5rem 0; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+.project-card { background: #161b22; border-radius: 12px; overflow: hidden; position: relative; transition: transform 0.3s, box-shadow 0.3s; }
+.project-card:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 12px 30px rgba(0,0,0,0.5); }
+.card-img { position: relative; }
+.card-img img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.card-overlay { position: absolute; inset: 0; background: rgba(17,24,39,0.85); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s; text-align: center; padding: 1rem; }
+.card-overlay h3 { color: #3b82f6; margin-bottom: 0.5rem; }
+.card-overlay p { color: #d1d5db; font-size: 0.9rem; }
+.card-img:hover .card-overlay { opacity: 1; }
+.card-content { padding: 1.5rem; text-align: center; }
+.tags span { display: inline-block; background: #1e293b; color: #60a5fa; padding: 0.3rem 0.6rem; border-radius: 4px; margin: 0.2rem; font-size: 0.8rem; }
+
+/* ===== Contato ===== */
+.contact { padding: 5rem 0; text-align: center; background: #0f172a; }
+.contact p { margin: 1rem 0 2rem; color: #9ca3af; }
+.contact-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.contact-links a { padding: 0.6rem 1.2rem; border: 1px solid #3b82f6; border-radius: 6px; transition: all 0.3s; }
+.contact-links a:hover { background: #3b82f6; color: #fff; }
+
+/* ===== Footer ===== */
+.footer { text-align: center; padding: 1.5rem; border-top: 1px solid #1f2937; font-size: 0.85rem; color: #6b7280; }
+
+/* ===== Animações ===== */
+.fade-in { animation: fadeIn 1.5s ease forwards; opacity: 0; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.slide-up { animation: slideUp 1.5s ease forwards; opacity: 0; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .nav-links { gap: 1rem; }
 }
