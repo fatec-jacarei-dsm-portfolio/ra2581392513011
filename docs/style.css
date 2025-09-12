@@ -21,7 +21,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s; }
 .hero h1 span { color: #3b82f6; }
 .hero h2 span { color: #60a5fa; }
 .hero p { color: #d1d5db; margin: 1rem 0 2rem; }
-.perfil {width: 300px; clip-path: circle();  transition: all 0.3s ease; }
+.perfil {width: 350px; clip-path: circle();  transition: all 0.3s ease; }
 .perfil:hover { transform: translateY(-5px) }
 .hero-perfil { flex:1 ;display: flex; flex-direction: row; justify-content: space-between;}
 
