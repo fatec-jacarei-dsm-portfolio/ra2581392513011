@@ -1,111 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arthur Facchinetti</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="tutu.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="container nav-content">
-      <h1 class="logo">Arthur <span>Facchinetti</span></h1>
-      <ul class="nav-links">
-        <li><a href="#hero">Início</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero" id="hero">
-    <canvas id="particles"></canvas>
-    <div class="overlay"></div>
-    <div class="container hero-content fade-in">
-      <div class="hero-perfil">
-        <div>
-          <h2>👋 Olá, eu sou <span>Arthur Facchinetti</span></h2>
-          <h1>Estudante e desenvolvedor de <br><span>software</span></h1>
-          <p>
-            Desenvolvedor Fullstack, aprendendo de tudo um pouco.
-          </p>
-        </div>
-                  <img src="./img/perfil.png" class="perfil">
-
-      </div>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn main-btn">Explorar Projetos</a>
-        <a href="#contact" class="btn">Fale Comigo</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- PROJETOS -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2 class="section-title slide-up">Projetos em Destaque</h2>
-      <div class="projects-grid">
-        <!-- Projeto 1 -->
-        <div class="project-card slide-up">
-          <div class="card-img">
-            <img src="./img/imagem1.png" alt="Projeto Catálogo de Lugares">
-            <div class="card-overlay">
-              <h3>Catálogo de Lugares</h3>
-              <p>Catálogo de restaurantes e bares da cidade com sistema de pesquisa.</p>
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="tags"><span>React</span><span>Node.js</span><span>Vite</span></div>
-            <div class="buttons">
-              <a href="https://artfacchinetti.github.io/RoleVale/" class="btn main-btn">Acessar</a>
-              <a href="https://github.com/ArtFacchinetti/RoleVale" class="btn">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projeto 2 -->
-        <div class="project-card slide-up main-card">
-          <div class="card-img">
-            <img src="./img/print-abp-2.png" alt="Dashboard Financeiro">
-            <div class="card-overlay">
-              <h3>Aprendizagem Baseada em Projetos <BR> ABP</h3>
-              <p>Visualização de dados liminológicos do INPE. <br> Projeto ABP segundo semestre.</p>
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="tags"><span>NodeJs</span><span>Express</span><span>PostgreSQL</span></div>
-            <div class="buttons">
-              <a href="https://github.com/ErrorSquad-ABP/ABP2" class="btn">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section class="contact" id="contact">
-    <div class="container fade-in">
-      <h2 class="section-title">Me <s>contrate</s> contate!</h2>
-      <p>Entre em contato e vamos criar algo incrível juntos. 🚀</p>
-      <div class="contact-links">
-        <a href="mailto:arthurfacchinetti10@gmail.com" class="btn main-btn">📧 Enviar Email</a>
-        <a href="https://github.com/ArtFacchinetti" target="_blank" class="btn main-btn">💻 GitHub</a>
-        <a href="https://www.linkedin.com/in/arthur-facchinetti/" target="_blank" class="btn main-btn">🔗 LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Arthur Facchinetti — Fatec Jacareí ☕</p>
-  </footer>
-
-  <script src="particulas.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/assets/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
