@@ -1,7 +1,7 @@
 # Portfólio de Projetos - Fatec Jacareí
 ### Aluno: Arthur Facchinetti Peixoto
 ### Curso: Desenvolvimento de Software Multiplataforma
-### Turma: 1o Semestre de 2025
+### Turma: 4o Semestre de 2025
  
 ---
 
